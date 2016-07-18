@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /error/
-
-Allow: /
-
-Sitemap: http://127.0.0.1.xip.io:9999/sitemap.xml
