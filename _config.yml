@@ -1,0 +1,46 @@
+#
+# Configuration
+#
+
+# Site
+title: "Justin Charles"
+title_after: > # ignore newlines in this value
+  Designer & Developer
+description: > # ignore newlines in this value
+  Designer and developer living in Brooklyn, New York.
+author: "Justin Charles"
+encoding: "utf-8"
+language: "en-us"
+
+# Routes
+source: ./source
+destination: ./build
+baseurl: ""
+url: "http://127.0.0.1.xip.io:9999"
+root: /
+permalink: /:categories/:title/
+
+# Writing
+markdown: kramdown
+
+# Publishing
+future: true
+show_drafts: true
+limit_posts: 5
+
+# <head>
+favicons: true
+openGraph: true
+twitterCards:
+  username: justincharles
+
+# Analytics
+analytics:
+  id: UA-XXXXXX-XX
+  domain: http://justincharl.es
+
+# Excludes
+#
+# Travis-CI bundles all gems in the vendor directory on its build
+# servers, which Jekyll will mistakenly read and explode on.
+exclude: [vendor]
