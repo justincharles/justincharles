@@ -1,5 +1,8 @@
 // Define Dependencies
 var gulp = require('gulp')
+var ghPages = require('gulp-gh-pages');
 
-// Deploy (gulp deploy)
-gulp.task('deploy', ['deploy:rsync'])
+gulp.task('deploy', function() {
+  return gulp.src('./build/production/**/*')
+    .pipe(ghPages());
+});
